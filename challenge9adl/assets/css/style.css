@@ -20,7 +20,7 @@ body {
 
 @media (min-width: 576px) {
         .grid-container { display: grid;
-        grid-template-columns: 1fr 10fr;
+        grid-template-columns: 20% 1fr;
         grid-template-areas:
             "nav aside "
             "nav main"
@@ -34,7 +34,7 @@ body {
     padding: 10px;
     grid-area: nav;
     color: white;
-    text-align: start;
+    height: 17%;
 }
 
 /* Flex Containeer in Nav =DDD!!! ahahhaaa  */
@@ -43,22 +43,18 @@ body {
     display: flex;
 }
 
-/* Media Queries Flex-Container hahahahaa =DDD!! =)!!! */
-
-@media (min-width: 576px) {
-    .flex-container { display: flex;
-        flex-direction: column;
-    }
-}
-
 /* Button Containeer in Navvvv hahahahaa =DDD !! =)!!! */
 
 .button-container {
     display: flex;
 }
 
-/* Button Styles =DDD!! hahaaa =)!!! */
+ /* Navbar Supported Content =DDD!! hahahaahaa =)!!!! */
 
+.navbarSupportedContent {
+    display: flex;
+    flex-direction: column;
+ }
 /* Aside Barr hahahaaa =DDD!! */
 
 aside {
@@ -93,7 +89,7 @@ main {
 
 @media (min-width: 576px) {
     main {  display: grid;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             padding: 10px;
             grid-area: main;
             text-align: center;
@@ -139,7 +135,6 @@ main {
 /* Footer Barrr hahahaa =DD! =)!!! */
 
 footer {
-    padding: 10px;
     grid-area: footer;
     text-align: center;
     color: white;
