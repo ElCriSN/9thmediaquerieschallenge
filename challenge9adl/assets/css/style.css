@@ -1,9 +1,13 @@
+/* Bodyyy hahahaa =DD!! */
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+/* Grid Container =DDD!!! */
+
 .grid-container {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     border: 1px solid black;
     grid-template-areas: 
         "nav"
@@ -12,37 +16,131 @@ body {
         "footer";
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
+/* Media Queries Grid-Container hahahaa =)!! =DDD!! */
+
+@media (min-width: 576px) {
+        .grid-container { display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-areas:
+            "nav aside "
+            "nav main"
+            "footer main"
+    }
 }
-nav {
+
+/* Navigation Barr hahahaa =DD!!! */
+
+#nav {
     padding: 10px;
     grid-area: nav;
-    background: #0037a1;
     color: white;
     text-align: start;
 }
 
-aside {
-    padding: 150px;
-    grid-area: aside;
+/* Flex Containeer in Nav =DDD!!! ahahhaaa  */
+
+.flex-container {
+    display: flex;
 }
 
+/* Media Queries Flex-Container hahahahaa =DDD!! =)!!! */
+
+@media (min-width: 576px) {
+    .flex-container { display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Button Containeer in Navvvv hahahahaa =DDD !! =)!!! */
+
+.button-container {
+    display: flex;
+}
+
+/* Button Styles =DDD!! hahaaa =)!!! */
+
+/* Aside Barr hahahaaa =DDD!! */
+
+aside {
+    padding: 1%;
+    grid-area: aside;
+    text-align: center;
+}
+
+select {
+    width: 95%;
+}
+/* Main Menuuuu =DDDD!! hahahahaa ! */
+
 main {
+    display: grid;
+    grid-template-rows: 1fr;
     padding: 10px;
     grid-area: main;
     text-align: center;
+    grid-template-areas: 
+        "grid"
+        "grid0"
+        "grid1"
+        "grid2"
+        "grid3"
+        "grid4"
+        "grid5"
+        "grid6";
 }
+
+/* Media Queries Main =DDDD!! hahaaa =)!!! */
+
+@media (min-width: 576px) {
+    main {  display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            padding: 10px;
+            grid-area: main;
+            text-align: center;
+            grid-template-areas: 
+                "grid grid0 grid1 grid2"
+                "grid3 grid4 grid5 grid6"
+            }
+}
+
+.grid {
+    grid-area: grid;
+
+}
+
+.grid0 {
+    grid-area: grid0;
+}
+
+.grid1 {
+    grid-area: grid1;
+}
+
+.grid2 {
+    grid-area: grid2;
+}
+
+.grid3 {
+    grid-area: grid3;
+}
+
+.grid4 {
+    grid-area: grid4;
+}
+
+.grid5 {
+    grid-area: grid5;
+}
+
+.grid6 {
+    grid-area: grid6;
+}
+
+/* Footer Barrr hahahaa =DD! =)!!! */
 
 footer {
     padding: 10px;
     grid-area: footer;
-    background: #d02a1e;
     text-align: center;
-}
-
-@media (min-width: 576px) {
-    main { grid-template-columns: 1fr 1fr }
-    
+    color: white;
 }
