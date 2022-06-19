@@ -1,139 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/6b8f0c7049.js" crossorigin="anonymous"></script>
-    <title>Desafío 8 Mediaqueries FSJS ADL =DDD!!</title>
-</head>
-
-<body>
-    <!-- Grid Container =DD!! -->
-    <div class="grid-container bg-primary">
-        <!-- Navigation (Navigation Menu =DDD!!) =)!! -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="nav">
-            <div class="flex-container">
-                <i class="fa-solid fa-paintbrush"></i>
-                <h6>Tienda de Arte</h6>
-                <!-- Poner los Items en vertical jajaajaa =DD!! -->
-                <div class="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Catálogo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ofertas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script src="https://kit.fontawesome.com/6b8f0c7049.js" crossorigin="anonymous"></script>
+      <title>Desafío 8 Mediaqueries FSJS ADL =DDD!!</title>
+  </head>
+  
+  <body>
+      <!-- Grid Container =DD!! -->
+      <div class="grid-container bg-primary">
+          <!-- Navigation (Navigation Menu =DDD!!) =)!! -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="nav">
+            <!-- Nav Flex-Container =DD!!! ahaha =)!!! -->
+              <div class="flex-container">
+                <div class="navicon"> 
+                  <i class="fa-solid fa-car"></i>
                 </div>
-            </div>
-            <div class="button-container">
-              <div class="container">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <div class="navtext">
+                  <h6>Electric Car Store 👍!!!</h6>
+                </div>
+              </div>
+              <!-- Poner los Items en vertical jajaajaa =DD!! -->
+              <ul>
+                  <li>
+                      Inicio
+                  </li>
+                  <li class="nav-item">
+                    Catálogo
+                  </li>
+                  <li class="nav-item">
+                    Ofertas
+                  </li>
+                  <li class="nav-item">
+                    Contacto
+                  </li>
+              </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="buttoncool">
-                      <span class="navbar-toggler-icon"></span>
+                     <span class="navbar-toggler-icon"></span></button>
+          </nav>
+          <!-- Aside Bar =)!! (Filter Section =DDD!!) -->
+          <aside class="bg-light">
+              <div>
+                  <p>Ordenar por:</p>
+                  <select>
+                      <option value="precio">Precio</option>
+                      <option value="fecha">Fecha</option>
+                  </select>
               </div>
-        </nav>
-        <!-- Aside Bar =)!! (Filter Section =DDD!!) -->
-        <aside class="bg-light">
-            <div>
-                <p>Ordenar por:</p>
-                <select>
-                    <option value="precio">Precio</option>
-                    <option value="fecha">Fecha</option>
-                </select>
-            </div>
-        </aside>
-        <!-- Principal Section =DDDD!! -->
-        <main class="bg-light">
-            <div class="grid">
-              <div class="card" style="width: 14rem;">
-                <img src="assets/img/00.jpg" class="card-img-top" alt="cooooool photoo 1 hahahaa ArTTTT =DDDDDD!">
-                <div class="card-body">
-                  <h5 class="card-title">Fotazaaa =DDD!!</h5>
-                  <a href="#" class="btn btn-primary">Ver más</a>
+          </aside>
+          <!-- Principal Section =DDDD!! -->
+          <main class="bg-light">
+              <div class="grid">
+                <div class="card">
+                  <img src="assets/img/electricar0.jpg" class="card-img-top" alt="cooooool photoo 1 hahahaa ArTTTT =DDDDDD!">
+                  <div class="card-body">
+                    <h5 class="card-title">Model: City Car</h5>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="grid0">
-              <div class="card" style="width: 14rem;">
-                <img src="assets/img/01.jpg" class="card-img-top" alt="cooooool photoo 2 hahahaa ArTTTT =DDDDDD!">
-                <div class="card-body">
-                  <h5 class="card-title">Fotazaaa =DDD!!</h5>
-                  <a href="#" class="btn btn-primary">Ver más</a>
+              <div class="grid0">
+                <div class="card">
+                  <img src="assets/img/electricar0.jpg" class="card-img-top" alt="cooooool photoo 2 hahahaa ArTTTT =DDDDDD!">
+                  <div class="card-body">
+                    <h5 class="card-title">Model: City Car</h5>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="grid1">
-              <div class="card" style="width: 14em;">
-                <img src="assets/img/02.jpg" class="card-img-top" alt="cooooool photoo 3 hahahaa ArTTTT =DDDDDD!">
-                <div class="card-body">
-                  <h5 class="card-title">Fotazaaa</h5>
-                  <a href="#" class="btn btn-primary">Ver más</a>
+              <div class="grid1">
+                <div class="card">
+                  <img src="assets/img/electricar0.jpg" class="card-img-top" alt="cooooool photoo 3 hahahaa ArTTTT =DDDDDD!">
+                  <div class="card-body">
+                    <h5 class="card-title">Model: City Car</h5>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="grid2">
-              <div class="card" style="width: 14rem;">
-                <img src="assets/img/03.jpg" class="card-img-top" alt="cooooool photoo 4 hahahaa ArTTTT =DDDDDD!">
-                <div class="card-body">
-                  <h5 class="card-title">Fotazaaa =DDDD!!</h5>
-                  <a href="#" class="btn btn-primary">Ver más</a>
+              <div class="grid2">
+                <div class="card">
+                  <img src="assets/img/electricar0.jpg" class="card-img-top" alt="cooooool photoo 4 hahahaa ArTTTT =DDDDDD!">
+                  <div class="card-body">
+                    <h5 class="card-title">Model: City Car</h5>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="grid3">
-              <div class="card" style="width: 14rem;">
-                <img src="assets/img/04.jpg" class="card-img-top" alt="cooooool photoo 5 hahahaa ArTTTT =DDDDDD!">
-                <div class="card-body">
-                  <h5 class="card-title">Fotaazaa =DDDD!!</h5>
-                  <a href="#" class="btn btn-primary">Ver más</a>
+              <div class="grid3">
+                <div class="card">
+                  <img src="assets/img/electricar0.jpg" class="card-img-top" alt="cooooool photoo 5 hahahaa ArTTTT =DDDDDD!">
+                  <div class="card-body">
+                    <h5 class="card-title">Model: City Car</h5>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="grid4">
-              <div class="card" style="width: 14rem;">
-                <img src="assets/img/00.jpg" class="card-img-top" alt="cooooool photoo 6 hahahaa ArTTTT =DDDDDD!">
-                <div class="card-body">
-                  <h5 class="card-title">Fotazaaaaaaa</h5>
-                  <a href="#" class="btn btn-primary">Ver más</a>
+              <div class="grid4">
+                <div class="card">
+                  <img src="assets/img/electricar0.jpg" class="card-img-top" alt="cooooool photoo 6 hahahaa ArTTTT =DDDDDD!">
+                  <div class="card-body">
+                    <h5 class="card-title">Model: City Car</h5>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="grid5">
-              <div class="card" style="width: 14rem;">
-                <img src="assets/img/01.jpg" class="card-img-top" alt="cooooool photoo 7 hahahaa ArTTTT =DDDDDD!">
-                <div class="card-body">
-                  <h5 class="card-title">Fotazaaaaaaaaaaa =DDD!</h5>
-                  <a href="#" class="btn btn-primary">Ver más</a>
+              <div class="grid5">
+                <div class="card">
+                  <img src="assets/img/electricar0.jpg" class="card-img-top" alt="cooooool photoo 7 hahahaa ArTTTT =DDDDDD!">
+                  <div class="card-body">
+                    <h5 class="card-title">Model: City Car</h5>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="grid6">
-              <div class="card" style="width: 14rem;">
-                <img src="assets/img/02.jpg" class="card-img-top" alt="cooooool photoo 8 hahahaa ArTTTT =DDDDDD!">
-                <div class="card-body">
-                  <h5 class="card-title">Fotazaaaa =DDDDD!!!</h5>
-                  <a href="#" class="btn btn-primary">Ver más</a>
+              <div class="grid6">
+                <div class="card">
+                  <img src="assets/img/electricar0.jpg" class="card-img-top" alt="cooooool photoo 8 hahahaa ArTTTT =DDDDDD!">
+                  <div class="card-body">
+                    <h5 class="card-title">Model: City Car</h5>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
               </div>
-            </div>
-        </main>
-        <!-- Footer =DDD!!! -->
-        <footer class="bg-success">
-            <h6>@https://github.com/ElCriSN 😀!!!</h6>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-        </footer>
-    </div>
+          </main>
+          <!-- Footer =DDD!!! -->
+          <footer>
+              <h6>@https://github.com/ElCriSN 😀!!!</h6>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-linkedin"></i>
+          </footer>
+      </div>
+  </body>
+  </html>
 </body>
 </html>
