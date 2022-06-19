@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body =DDD!!! */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Grid-Container =DDD!! */
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "navigation"
+        "bar"
+        "products"
+        "final";
+}
+
+/* Navvvigation Barrr hahaha =)!! */
+
+nav {
+    grid-area: navigation;
+    width: 100%;
+    background-color: #03579c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+/* Logo Nav Styles =)!! */
+
+.logonav {
+    display: flex;
+    align-items: center;
+}
+
+/* Nav Icons Styles =)!! */
+
+.icons { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nav Text Logooo =)!!!!! */
+
+.textlogo {
+    display: flex;
+    align-items: center;
+}
+
+/* Nav Button Styles =)!! */
+
+.navbutton {
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: #03579c;
+}
+
+/* Nav Ul Styles =)!!! */
+
+.navmenu {
+    list-style: none;
+    display: none;
+    width: 100%;
+}
+
+/* Nav Ul Styles =)!!! */
+
+.navmenu li {
+    cursor: pointer;
+}
+
+
+header {
+    grid-area: bar;
+    background-color: lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Header Select Styles =)!! */
+
+header select {
+    padding: 8px;
+    border-radius: 4px;
+}
+/* Maaiiin ahhahaa =DD!!! */
+
+main {
+    grid-area: products;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Article Flex Styles hahahaha =)! */
+
+article.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: 1px solid grey;
+    padding: 9px 0;
+    margin: 5% auto auto auto;
+}
+
+
+article.tablet {
+    display: none;
+}
+
+article.desktop {
+    display: none;
+}
+
+.imagemain {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+}
+
+
+.imagemain img {
+    width: 100%;
+    height: 100%;
+}
+
+button.mainbutton {
+    border: none;
+    padding: 5px;
+    background: lightblue;
+    width: 27%;
+    cursor: pointer;
+}
+
+.mainpagination {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 10% auto;
+}
+
+.previous, .page, .final {
+    border: 1px solid gray;
+    padding: 15px;
+    cursor: pointer;
+}
+/* Footerr hahaha =)! */
+
+footer {
+    grid-area: final;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    padding: 5px 0;
+    color: white;
+}
+
+footer .footer {
+    padding: 20px;
+}
+
+/* MediaQueries Tablet =)!!! hahahaa =DD!!! */
+
+@media (min-width: 576px) {
+    .grid-container {
+        grid-template-areas: 
+            "navigation navigation"
+            "bar products"
+            "final final";
+    }
+    nav {
+        padding: 8px 4px;
+    }
+
+    .navmenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .navmenu li{
+        margin: 0 15px;
+    }
+
+    .navbutton {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+
+    article.mobile {
+        display: none;
+    }
+
+    article.tablet {
+        display: flex;
+    }
+
+    article.desktop {
+        display: none;
+    }
+
+    .mainpagination {
+        grid-column: span 2;
+    }
+}
+
+/* Media Queries 992px (Escritorio) =)!!!! */
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-areas: 
+            "navigation bar"
+            "navigation products"
+            "final products";
+        grid-template-columns: 250px 2fr;
+        height: 100vh;
+
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .logonav {
+        padding-top: 10px;
+    }
+
+    .navmenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 25px;
+        margin: 20px;
+        gap: 15px;
+    }
+
+    .navbutton {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 100%;
+    }
+
+    article.mobile {
+        display: none;
+    }
+
+    article.tablet {
+        display: none;
+    }
+
+    article.desktop {
+        display: flex;
+    }
+
+    .mainpagination {
+        grid-column: span 4;
+    }
+}
