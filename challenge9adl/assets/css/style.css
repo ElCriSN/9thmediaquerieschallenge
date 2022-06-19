@@ -1,11 +1,13 @@
-/* Bodyyy hahahaa =DD!! */
-
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    max-width: 100%;
 }
+    
 /* Grid Container =DDD!!! */
 
 .grid-container {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     border: 1px solid black;
@@ -16,62 +18,66 @@ body {
         "footer";
 }
 
-/* Media Queries Grid-Container hahahaa =)!! =DDD!! */
-
-@media (min-width: 576px) {
-        .grid-container { display: grid;
-        grid-template-columns: 20% 1fr;
-        grid-template-areas:
-            "nav aside "
-            "nav main"
-            "footer main"
-    }
-}
-
-/* Navigation Barr hahahaa =DD!!! */
-
 #nav {
-    padding: 10px;
     grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    height: 17%;
+    margin: auto;
 }
 
-/* Flex Containeer in Nav =DDD!!! ahahhaaa  */
+/* Nav Flex-Container Styles =DD!! hahaaa =)!!! */
 
 .flex-container {
     display: flex;
+    align-items: center;
 }
 
-/* Button Containeer in Navvvv hahahahaa =DDD !! =)!!! */
+/* Nav Icon Styles =DDD!!! hahahaa =)!!! */
 
-.button-container {
-    display: flex;
-}
-
- /* Navbar Supported Content =DDD!! hahahaahaa =)!!!! */
-
-.navbarSupportedContent {
+.navicon {
     display: flex;
     flex-direction: column;
- }
+    align-items: center;
+}
+
+/* Nav Text Logo Styles =DD!! hahahaa =)!!! */
+
+.navtext {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar List Styleshahahaa =)!!! =D!! */
+
+ul {
+    display: none;
+    width: 100%;
+}
+
 /* Aside Barr hahahaaa =DDD!! */
 
 aside {
     padding: 1%;
     grid-area: aside;
     text-align: center;
+    background-color: lightgrey;
 }
+
+/* Aside Select Stylesss hahaaa =)!!! =DD!! */
 
 select {
     width: 95%;
 }
+
 /* Main Menuuuu =DDDD!! hahahahaa ! */
 
 main {
     display: grid;
     grid-template-rows: 1fr;
-    padding: 10px;
+    width: 100%;
+    background-color: white;
     grid-area: main;
     text-align: center;
     grid-template-areas: 
@@ -83,20 +89,6 @@ main {
         "grid4"
         "grid5"
         "grid6";
-}
-
-/* Media Queries Main =DDDD!! hahaaa =)!!! */
-
-@media (min-width: 576px) {
-    main {  display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            padding: 10px;
-            grid-area: main;
-            text-align: center;
-            grid-template-areas: 
-                "grid grid0 grid1 grid2"
-                "grid3 grid4 grid5 grid6"
-            }
 }
 
 .grid {
@@ -132,10 +124,63 @@ main {
     grid-area: grid6;
 }
 
+.card img {
+    width: 40%;
+    margin: auto;
+}
 /* Footer Barrr hahahaa =DD! =)!!! */
 
 footer {
     grid-area: footer;
     text-align: center;
     color: white;
+    background-color: blue;
+}
+
+/* Media Queries Escritorio (576px) hahahaa =)!! =DDD!! */
+
+@media (min-width: 576px) {
+    .grid-container { grid-template-columns: 20% 1fr;
+    grid-template-areas:
+        "nav aside "
+        "nav main"
+        "footer main";
+    height: 100vh;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 1px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 25px;
+        margin: 20px;
+        gap: 15px;
+    }
+
+    ul li{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+    
+    main { grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding: 10px;
+            grid-area: main;
+            text-align: center;
+            grid-template-areas: 
+                "grid grid0 grid1 grid2"
+                "grid3 grid4 grid5 grid6"
+            }
 }
