@@ -1,13 +1,11 @@
+/* Bodyyy hahahaa =DD!! */
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-    max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-    
 /* Grid Container =DDD!!! */
 
 .grid-container {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     border: 1px solid black;
@@ -18,42 +16,32 @@ body {
         "footer";
 }
 
+/* Navigation Barr hahahaa =DD!!! */
+
 #nav {
+    padding: 10px;
     grid-area: nav;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: white;
-    margin: auto;
+    height: 17%;
 }
 
-/* Nav Flex-Container Styles =DD!! hahaaa =)!!! */
+/* Flex Containeer in Nav =DDD!!! ahahhaaa  */
 
 .flex-container {
     display: flex;
-    align-items: center;
-}
-
-/* Nav Icon Styles =DDD!!! hahahaa =)!!! */
-
-.navicon {
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-/* Nav Text Logo Styles =DD!! hahahaa =)!!! */
+/* Nav Left Things Styless hahahaa =)!!! =DDD!! */
 
-.navtext {
+.navleftthings {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-/* Navbar List Styleshahahaa =)!!! =D!! */
 
 ul {
     display: none;
-    width: 100%;
 }
 
 /* Aside Barr hahahaaa =DDD!! */
@@ -62,10 +50,7 @@ aside {
     padding: 1%;
     grid-area: aside;
     text-align: center;
-    background-color: lightgrey;
 }
-
-/* Aside Select Stylesss hahaaa =)!!! =DD!! */
 
 select {
     width: 95%;
@@ -76,9 +61,9 @@ select {
 main {
     display: grid;
     grid-template-rows: 1fr;
-    width: 100%;
-    background-color: white;
+    padding: 10px;
     grid-area: main;
+    margin: auto;
     text-align: center;
     grid-template-areas: 
         "grid"
@@ -124,63 +109,58 @@ main {
     grid-area: grid6;
 }
 
-.card img {
-    width: 40%;
-    margin: auto;
-}
 /* Footer Barrr hahahaa =DD! =)!!! */
 
 footer {
     grid-area: footer;
     text-align: center;
     color: white;
-    background-color: blue;
 }
 
-/* Media Queries Escritorio (576px) hahahaa =)!! =DDD!! */
+/* Desktop (576px) MediaQueries hahahaa =)!!! =DD!!!  */
+
+/* Media Queries Grid-Container hahahaa =)!! =DDD!! */
 
 @media (min-width: 576px) {
-    .grid-container { grid-template-columns: 20% 1fr;
-    grid-template-areas:
-        "nav aside "
-        "nav main"
-        "footer main";
-    height: 100vh;
-    }
+        .grid-container { display: grid;
+        grid-template-columns: 20% 1fr;
+        grid-template-areas:
+            "nav aside "
+            "nav main"
+            "footer main";
+        }
 
-    #nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 100%;
-        margin-top: 1px;
-    }
+    /* Flex Container MediaQueriess Styless hahahaa =)!!! =DDD!! */
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 10px 25px;
-        margin: 20px;
-        gap: 15px;
-    }
+        .flex-container {
+            margin-top: 5rem;
+        }
 
-    ul li{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar-toggler {
-        display: none;
-    }
-    
-    main { grid-template-columns: 1fr 1fr 1fr 1fr;
-            padding: 10px;
-            grid-area: main;
+    /* Nav UL MediaQueriessss hahahahaa =DDDDD !!! =)!!! */
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             text-align: center;
-            grid-template-areas: 
-                "grid grid0 grid1 grid2"
-                "grid3 grid4 grid5 grid6"
-            }
-}
+        }
+
+    /* Nav UL LI MediaQueriesss hahahaaa =DDDD!! =)!!!!! */
+
+        ul li {
+            display: flex;
+            flex-direction: column;
+        }
+
+    /* Media Queries Main =DDDD!! hahaaa =)!!! */
+
+        main {  display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding: 10px;
+                grid-area: main;
+                text-align: center;
+                grid-template-areas: 
+                    "grid grid0 grid1 grid2"
+                    "grid3 grid4 grid5 grid6"
+        }
+    }
